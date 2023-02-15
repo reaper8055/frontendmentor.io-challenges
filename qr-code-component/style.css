@@ -1,0 +1,69 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+:root {
+	--primary-color: #2b7dfa;
+	--bg-color: #D5E1EF;
+	--radius: 20px;
+	--padding: 25px;
+	--secondary-text-color: #7D889E;
+	--primary-text-color: #1F314F;
+	--text-background-color: white;
+}
+
+.page {
+	background-color: var(--bg-color);
+	height: 1080px;
+	width: 1920px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+}
+
+.qr-code-card {
+	background-color: white;
+	border-radius: var(--radius);
+	height: 497px;
+	width: 340px;
+	padding: var(--padding);
+}
+
+.qr-code {
+	background-color: var(--primary-color);
+	width: 288px;
+	height: 288px;
+	border-radius: var(--radius);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+}
+
+.text-primary {
+	font-family: Outfit;
+	font-weight: 700;
+	font-size: 24px;
+	text-align: center;
+	margin-top: 15px;
+	color: var(--primary-text-color);
+}
+
+.text-secondary {
+	font-family: Outfit;
+	font-weight: 400;
+	font-size: 16px;
+	text-align: center;
+	margin-top: 15px;
+	padding: 10px;
+	color: var(--secondary-text-color);
+}
